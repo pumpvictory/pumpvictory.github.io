@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1B1D28;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+a{
+    text-align: left;
+    margin-right: auto !important;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    
+}
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.image {
+    width: 33.3%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+@media (max-width: 800px) {
+    .image {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        width: 100%;
+    }
+}

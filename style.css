@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #1B1D28;
+}
+
+header {
+    background-color: #1B1D28;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header a{
+    color: aliceblue;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition: border 0.3s;
+}
+
+.image.selected {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(152, 152, 152);
+    font-weight: bold;
+}
+
+
+#message a {
+    color: rgb(255, 255, 255); /* Set link color to red */
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    #message {
+        font-size: 16px;
+    }
+}
